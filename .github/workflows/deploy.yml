@@ -22,8 +22,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           targets: '[{ "Key": "tag:Name", "Values": ["ec2"] }]'
-
-
-          working-directory: /home/ubuntu/application
-          command: ls -al
-          comment: Hello world
+          
+          working-directory: ./
+          command: ls
+          
