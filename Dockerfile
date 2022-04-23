@@ -10,11 +10,6 @@ RUN npm install nodemon
 
 COPY . .
 
-RUN npx sequelize-cli db:create
-RUN npm run migrate:up
-RUN npm run seeders:up
-
-
 EXPOSE 3333
 
 CMD ["npm","run","dev"]
