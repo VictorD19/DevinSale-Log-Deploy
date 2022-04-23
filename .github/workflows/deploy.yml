@@ -22,8 +22,8 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           targets: '[{ "Key": "tag:Name", "Values": ["ec2"] }]'
-          
-          working-directory: ./M2P2-DEVinSales/DevinSale-Log-Deploy
-          command: sudo docker images
+          comment: aws-ssm-send-command testing
+          working-directory: /home/ubuntu/
+          command: echo $(date) >> logs.txt
   
           
