@@ -2,7 +2,7 @@ name: Deploy AWS
 
 on:
   pull_request:
-    branches: [main]
+    branches: main
 
 jobs:
   start:
