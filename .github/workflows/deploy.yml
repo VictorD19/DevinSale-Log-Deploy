@@ -25,4 +25,4 @@ jobs:
 
           working-directory: /home/ubuntu/application
           command: ls -al
-          comment: Hello world!
+          comment: Hello world
