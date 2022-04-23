@@ -16,7 +16,7 @@ jobs:
           uses: actions/checkout@v3.0.0
           
         - name: acessando ec2
-          run: ssh app@${{secrets.IP_AWS}}
+          run: ssh app@15.228.3.165
           
         - name: Mostrando directorio
           run: ls
