@@ -1,4 +1,6 @@
 const swaggerAutogen = require("swagger-autogen")();
+const port = 3000
+
 
 const doc = {
   info: {
@@ -6,7 +8,7 @@ const doc = {
     description:
       "Estas é a documentação para as desenvolvedores que utilizaram nossa API.",
   },
-  host: "localhost:3333",
+  host: `localhost:${port}` ,
   schemes: ["http"],
   securityDefinitions: {
     bearerAuth: {
